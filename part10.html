@@ -87,8 +87,8 @@ function create() {
 	enemy.animations.add('walk');
 	enemy.animations.play('walk',20, true);
 	game.physics.p2.enable('enemy');
-	enemy.body.setCollisionGroup(enemyCG);
-	enemy.body.collides(dudeCG);
+	enemy.body.setCollisionGroup(enemy);
+	enemy.body.collides(dude);
 	
 	game.physics.arcade.enable(enemy);
 	
