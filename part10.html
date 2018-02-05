@@ -84,8 +84,8 @@ function create() {
 	//player.animations.add('right', [5, 6, 7, 8], 10, true);
 
 	enemy = game.add.sprite(69, game.world.height - 150, 'npc');
-	enemy.animations.add('walk');
-	//enemy.animations.play('walk',20, true);
+	//enemy.animations.add('walk');
+	enemy.animations.play('walk',20, true);
 	//game.physics.p2.enable('enemy');
 	//enemy.body.setCollisionGroup(enemy);
 	//enemy.body.collides(dude);
