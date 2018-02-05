@@ -85,16 +85,16 @@ function create() {
 
 	enemy = game.add.sprite(69, game.world.height - 150, 'npc');
 	//enemy.animations.add('walk');
-	enemy.animations.play('walk',20, true);
+	//enemy.animations.play('walk',20, true);
 	game.physics.p2.enable('enemy');
-	//enemy.body.setCollisionGroup(enemy);
-	//enemy.body.collides(dude);
+	enemy.body.setCollisionGroup(enemy);
+	enemy.body.collides(dude);
 	
 	//game.physics.arcade.enable(enemy);
 	
-	//enemy.body.bounce.y = 0.2;
-	//enemy.body.gravity.y = 300;
-	//enemy.body.collideWorldBounds = true;
+	enemy.body.bounce.y = 0.2;
+	enemy.body.gravity.y = 300;
+	enemy.body.collideWorldBounds = true;
 
     //  Finally some stars to collect
     stars = game.add.group();
