@@ -101,7 +101,7 @@ function create() {
     }
 
     //  The score
-    scoreText = game.add.text(16, 16, 'Monsters Defeated: 0', { font: "50px Arial", fill: '#00002' });
+    scoreText = game.add.text(16, 16, 'Killed: 0', { font: "50px Arial", fill: '#00002' });
 
     //  Our controls.
     cursors = game.input.keyboard.createCursorKeys();
@@ -159,7 +159,7 @@ function collectStar (player, star) {
 
     //  Add and update the score
     score += 5.75;
-    scoreText.text = 'Score: ' + score;
+    scoreText.text = 'Killed: ' + score;
 
 }
 
